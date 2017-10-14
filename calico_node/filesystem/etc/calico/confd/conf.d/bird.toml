@@ -6,5 +6,5 @@ keys = [
     "/host",
     "/global",
 ]
-check_cmd = "bird -p -c {{"{{"}}.src{{"}}"}}"
+check_cmd = "bird -p -c {{.src}}"
 reload_cmd = "pkill -HUP bird || true"
